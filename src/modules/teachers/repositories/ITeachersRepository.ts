@@ -8,11 +8,12 @@ interface ICreateTeacherDTO {
 }
 
 interface ITeachersRepository {
-    create({ name, email, siap, classId }: ICreateTeacherDTO): Teachers
+    findBySiap(siap: string): Teachers
+    list(): Teachers[]
+    create({ name, email, siap, classId }: ICreateTeacherDTO): void
     // findById(id: string): User | undefined
     // findByEmail(email: string): User | undefined
     // turnAdmin(user: User): User
-    // list(): User[]
 }
 
 export { ITeachersRepository, ICreateTeacherDTO }

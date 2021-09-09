@@ -1,6 +1,6 @@
 import { TeachersRepository } from '../../repositories/implementations/TeachersRepository'
-import { CreateTeacherController } from './createTeacherController'
-import { CreateTeacherUseCase } from './createTeacherUseCase'
+import { CreateTeacherController } from './CreateTeacherController'
+import { CreateTeacherUseCase } from './CreateTeacherUseCase'
 
 const teachersRepository = TeachersRepository.getInstance()
 const createTeacherUseCase = new CreateTeacherUseCase(teachersRepository)
