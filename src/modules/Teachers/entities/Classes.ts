@@ -10,7 +10,7 @@ class Classes {
     public schoolYearId: number
     public module: number
 
-    constructor(props: Omit<'Classes', 'id'>, id?: string) {
+    constructor(props: Omit<Classes, 'id'>, id?: string) {
         Object.assign(this, props)
 
         if (!id) {
