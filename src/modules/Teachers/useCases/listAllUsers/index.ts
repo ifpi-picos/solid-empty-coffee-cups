@@ -1,5 +1,5 @@
 import { UsersRepository } from '../../repositories/implementations/UsersRepository'
-import { ListAllUsersController } from './ListAllUsersController'
+import { ListAllUsersController } from './ListUsersController'
 import { ListAllUsersUseCase } from './ListAllUsersUseCase'
 
 const usersRepository = UsersRepository.getInstance()

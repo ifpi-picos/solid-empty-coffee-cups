@@ -1,12 +1,12 @@
 import { Router } from 'express'
 
-import { createTeacherController } from '../modules/Teachers/useCases/createCourse/'
-import { listTeachersController } from '../modules/Teachers/useCases/listTeachers'
+import { createCourseController } from 'modules/Teachers/useCases/createCourse'
+import { listCoursesController } from 'modules/Teachers/useCases/listCourses/ListCoursesController'
 
-const teachersRoutes = Router()
+const coursesRoutes = Router()
 
-teachersRoutes.post('/', (request, response) => createTeacherController.handle(request, response))
+coursesRoutes.post('/', (request, response) => createCourseController.handle(request, response))
 
-teachersRoutes.get('/', (request, response) => listTeachersController.handle(request, response))
+coursesRoutes.get('/', (request, response) => listCoursesController.handle(request, response))
 
-export { teachersRoutes }
+export { coursesRoutes }

@@ -2,7 +2,7 @@ import { Response, Request } from 'express'
 
 import { CreateCourseUseCase } from './CreateCourseUseCase'
 
-class CreateTeacherController {
+class CreateCourseController {
     constructor(private createCourseUseCase: CreateCourseUseCase) {}
 
     handle(request: Request, response: Response): Response {
@@ -14,4 +14,4 @@ class CreateTeacherController {
     }
 }
 
-export { CreateTeacherController }
+export { CreateCourseController }
