@@ -1,19 +1,16 @@
-import {uuid} from 'uuidv4'
+import { v4 as uuid } from 'uuid'
 
-export class Course{
+export class Course {
     public readonly id: string
 
     public name: string
     public module: number
     public workload: number
-    public cordinationId: number
-    public nivelId: number
 
-    constructor(props: Omit<Course, 'id'>, id?:string){
+    constructor(props: Omit<Course, 'id'>, id?: string) {
         Object.assign(this, props)
-        if(!id){
+        if (!id) {
             this.id = uuid()
         }
     }
 }
-
