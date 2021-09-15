@@ -5,6 +5,6 @@ import { ListCoursesUseCase } from './ListCoursesUseCase'
 
 const courseRepository = new CourseRepository()
 const listCoursesUseCase = new ListCoursesUseCase(courseRepository)
-const listCourseController = new ListCoursesController(listCoursesUseCase)
+const listCoursesController = new ListCoursesController(listCoursesUseCase)
 
-export { listCourseController }
+export { listCoursesController }
