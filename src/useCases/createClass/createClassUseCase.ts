@@ -1,5 +1,5 @@
 import { Classes } from 'entities/Classes'
-import { IClassesRepository } from '/repositories/IClassesRepository'
+import { IClassesRepository } from 'repositories/IClassesRepository'
 
 import { ICreateClassRequestDTO } from './ICreateClassDTO'
 
