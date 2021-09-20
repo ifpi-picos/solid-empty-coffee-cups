@@ -4,10 +4,7 @@ class Classes {
     public readonly id: string
 
     public name: string
-    public turnoId: number
     public courseId: number
-    public RoomId: number
-    public schoolYearId: number
     public module: number
 
     constructor(props: Omit<Classes, 'id'>, id?: string) {
