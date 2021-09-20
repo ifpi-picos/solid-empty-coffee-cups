@@ -1,5 +1,4 @@
-import { ClassesRepository } from 'repositories/implementations/ClassesRepository'
-
+import { ClassesRepository } from '../../repositories/implementations/ClassesRepository'
 import { CreateClassController } from './createClassController'
 import { CreateClassUseCase } from './createClassUseCase'
 

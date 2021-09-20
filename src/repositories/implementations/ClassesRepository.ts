@@ -1,5 +1,4 @@
-import { Classes } from 'entities/Classes'
-
+import { Classes } from '../../entities/Classes'
 import { IClassesRepository } from '../IClassesRepository'
 
 export class ClassesRepository implements IClassesRepository {

@@ -1,8 +1,9 @@
 import { Router } from 'express'
-import { createClassController } from 'useCases/createClass'
 
-const ClassesRoutes = Router()
+import { createClassController } from '../useCases/createClass'
 
-ClassesRoutes.post('/', (request, response) => createClassController.handle(request, response))
+const classesRoutes = Router()
 
-export { ClassesRoutes }
+classesRoutes.post('/', (request, response) => createClassController.handle(request, response))
+
+export { classesRoutes }

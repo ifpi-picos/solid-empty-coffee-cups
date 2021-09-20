@@ -1,5 +1,4 @@
-import { Course } from 'entities/Course'
-
+import { Course } from '../../entities/Course'
 import { ICourseRepository } from '../../repositories/ICourseRepository'
 import { ICreateCourseRequestDTO } from './ICreateCourseDTO'
 

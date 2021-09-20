@@ -1,5 +1,4 @@
-import { Course } from 'entities/Course'
-
+import { Course } from '../../entities/Course'
 import { ICourseRepository } from '../ICourseRepository'
 
 export class CourseRepository implements ICourseRepository {

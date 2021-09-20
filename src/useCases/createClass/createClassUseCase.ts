@@ -1,6 +1,6 @@
-import { Classes } from 'entities/Classes'
 import { IClassesRepository } from 'repositories/IClassesRepository'
 
+import { Classes } from '../../entities/Classes'
 import { ICreateClassRequestDTO } from './ICreateClassDTO'
 
 export class CreateClassUseCase {

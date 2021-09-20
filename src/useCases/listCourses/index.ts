@@ -1,5 +1,4 @@
-import { CourseRepository } from 'repositories/implementations/CourseRepository'
-
+import { CourseRepository } from '../../repositories/implementations/CourseRepository'
 import { ListCoursesController } from './ListCoursesController'
 import { ListCoursesUseCase } from './ListCoursesUseCase'
 

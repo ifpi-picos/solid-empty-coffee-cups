@@ -1,6 +1,5 @@
-import { Course } from 'entities/Course'
-
-import { ICourseRepository } from '/repositories/ICourseRepository'
+import { Course } from '../../entities/Course'
+import { ICourseRepository } from '../../repositories/ICourseRepository'
 
 class ListCoursesUseCase {
     constructor(private courseRepository: ICourseRepository) {}
