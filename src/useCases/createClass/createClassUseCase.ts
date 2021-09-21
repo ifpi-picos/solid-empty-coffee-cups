@@ -10,6 +10,7 @@ export class CreateClassUseCase {
     async execute(data: ICreateClassRequestDTO) {
         const ClassAlredyExists = this.classRepository.findByName(data.name)
 
+        console.log(ClassAlredyExists)
         if (ClassAlredyExists) {
             throw new Error('Class Alredy exists!!!')
         }

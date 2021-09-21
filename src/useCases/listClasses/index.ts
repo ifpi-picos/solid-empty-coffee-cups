@@ -2,7 +2,7 @@ import { ClassesRepository } from '../../repositories/implementations/ClassesRep
 import { ListClassesController } from './ListClassesController'
 import { ListClassesUseCase } from './ListClassesUseCase'
 
-const classesRepository = new ClassesRepository()
+const classesRepository = ClassesRepository.getInstance()
 const listClassesUseCase = new ListClassesUseCase(classesRepository)
 const listClassesController = new ListClassesController(listClassesUseCase)
 

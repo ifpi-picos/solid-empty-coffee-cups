@@ -2,7 +2,7 @@ import { ClassesRepository } from '../../repositories/implementations/ClassesRep
 import { CreateClassController } from './createClassController'
 import { CreateClassUseCase } from './createClassUseCase'
 
-const classRepository = new ClassesRepository()
+const classRepository = ClassesRepository.getInstance()
 
 const createClassUseCase = new CreateClassUseCase(classRepository)
 

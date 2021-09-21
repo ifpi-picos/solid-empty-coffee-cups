@@ -2,7 +2,7 @@ import { CourseRepository } from '../../repositories/implementations/CourseRepos
 import { ListCoursesController } from './ListCoursesController'
 import { ListCoursesUseCase } from './ListCoursesUseCase'
 
-const courseRepository = new CourseRepository()
+const courseRepository = CourseRepository.getInstance()
 const listCoursesUseCase = new ListCoursesUseCase(courseRepository)
 const listCoursesController = new ListCoursesController(listCoursesUseCase)
 
